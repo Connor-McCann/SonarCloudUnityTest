@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8BCD742A-E62F-5A0B-788F-764CF13E587A}</ProjectGuid>
+    <ProjectGuid>{B37C7FE9-C3E5-CA53-3327-5D3232E5896B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>fps.Gameplay</AssemblyName>
+    <AssemblyName>Unity.InteractiveTutorials.Core.Scripts</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,29 +56,16 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Managers\PlayerInputHandler.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Jetpack.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ChargedProjectileEffectsHandler.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\OverheatBehavior.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\HealthPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\WeaponFuelCellHandler.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\WeaponPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ProjectileChargeParameters.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\PositionBobbing.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\TeleportPlayer.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectiveKillEnemies.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Pickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\JetpackPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ProjectileStandard.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Managers\PlayerWeaponsManager.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectiveReachPoint.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\AmmoPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectivePickupItem.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\PlayerCharacterController.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ChargedWeaponEffectsHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\BaseCollisionBroadcaster.cs" />
+    <Compile Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\SceneObjectGUIDComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\CollisionBroadcaster3D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\CollisionBroadcaster2D.cs" />
+    <Compile Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\SceneObjectGUIDManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\IPlayerAvatar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\SelectionRoot.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\FPS\Scripts\Gameplay\fps.Gameplay.asmdef" />
+    <None Include="Library\PackageCache\com.unity.learn.iet-framework@1.2.3\Runtime\Unity.InteractiveTutorials.Core.Scripts.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -674,10 +661,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="fps.Game.csproj">
-      <Project>{7F9E07E2-5A50-48B3-09AB-101F83D586B7}</Project>
-      <Name>fps.Game</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{DEB81E21-42E3-B95F-D456-182AA1273475}</Project>
       <Name>UnityEditor.UI</Name>
