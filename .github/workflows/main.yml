@@ -44,5 +44,5 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Connor-McCann_SonarCloudUnityTest" /o:"connor-mccann" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          .\.sonar\scanner\dotnet-sonarscanner build SonarCloudTest/SonarCloudTest.sln
+          dotnet build SonarCloudTest/SonarCloudTest.sln
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
