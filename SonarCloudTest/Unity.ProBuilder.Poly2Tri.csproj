@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8BCD742A-E62F-5A0B-788F-764CF13E587A}</ProjectGuid>
+    <ProjectGuid>{5D0864CA-9DE0-114C-BE5D-B629DE07FD10}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>fps.Gameplay</AssemblyName>
+    <AssemblyName>Unity.ProBuilder.Poly2Tri</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -56,29 +56,40 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Managers\PlayerInputHandler.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Jetpack.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ChargedProjectileEffectsHandler.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\OverheatBehavior.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\HealthPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\WeaponFuelCellHandler.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\WeaponPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ProjectileChargeParameters.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\PositionBobbing.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\TeleportPlayer.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectiveKillEnemies.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Pickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\JetpackPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ProjectileStandard.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Managers\PlayerWeaponsManager.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectiveReachPoint.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\AmmoPickup.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\Objectives\ObjectivePickupItem.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\PlayerCharacterController.cs" />
-    <Compile Include="Assets\FPS\Scripts\Gameplay\ChargedWeaponEffectsHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\TriangulationConstraint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Polygon\Polygon.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepPointComparator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\DelaunayTriangle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Orientation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Util\PolygonGenerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\TriangulationMode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\TriangulationDebugContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Sets\PointSet.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\TriangulationUtil.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\AdvancingFrontNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepEdgeEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Utility\FixedArray3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Sets\ConstrainedPointSet.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Util\PointGenerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepBasin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\ITriangulatable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\PointOnEdgeException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\TriangulationAlgorithm.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Utility\FixedBitArray3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\TriangulationContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepDebugContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\TriangulationPoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\DTSweepConstraint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Triangulation\Delaunay\Sweep\AdvancingFront.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Polygon\PolygonPoint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\P2T.cs" />
+    <Compile Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Polygon\PolygonSet.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\FPS\Scripts\Gameplay\fps.Gameplay.asmdef" />
+    <None Include="Library\PackageCache\com.unity.probuilder@4.5.2\External\Poly2Tri\Unity.ProBuilder.Poly2Tri.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -674,10 +685,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="fps.Game.csproj">
-      <Project>{7F9E07E2-5A50-48B3-09AB-101F83D586B7}</Project>
-      <Name>fps.Game</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{DEB81E21-42E3-B95F-D456-182AA1273475}</Project>
       <Name>UnityEditor.UI</Name>
